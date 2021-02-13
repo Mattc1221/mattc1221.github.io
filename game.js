@@ -24,12 +24,14 @@ const text1 = /** @type {HTMLInputElement} */ (document.getElementById("text1"))
 const timeSlider = /** @type {HTMLInputElement} */ (document.getElementById("slider2"));
 const text2 = /** @type {HTMLInputElement} */ (document.getElementById("text2"));
 const muteBox = /** @type {HTMLInputElement} */ (document.getElementById("mute"));
+const nameBox = /** @type {HTMLInputElement} */ (document.getElementById("name"));
 
 /* Redraw list */
 let boxes = [];
 let bullets = [];
 let asteroids = [];
 let particles = [];
+
 /* player and other quadcopters */
 let copters = [{"x": canvas.width/2 - 50, "y": canvas.height/4 - 50, "d": 0, "r": 0},
     {"x": canvas.width/4 - 50, "y": canvas.height*3/4 - 50, "d": 0, "r": 0},
@@ -68,6 +70,9 @@ let mouseY;
 let score = 0;
 let prevScore = -1;
 let best = 0;
+
+/* User info */
+let username = "Guest" + Math.floor(Math.random() * 100000).toString;
 
 /* Sounds -- found on https://freesound.org/people/InspectorJ/sounds/448226/ */
 let pewSound = new sound("music/pew.wav");
@@ -118,6 +123,11 @@ function muteVolume() {
     }
 }
 muteBox.onchange = muteVolume;
+
+function setUsername(){
+    username = nameBox.value;
+}
+nameBox.onchange = setUsername;
 
 /* MOUSE RELATED FUNCTIONS*/
 
@@ -554,19 +564,19 @@ function body( context, points, bladeR, scale){
 
 function doKeyDown(evt){
     switch (evt.keyCode) {
-        case 38:  /* Up arrow was pressed */
+        case 87:  /* Up arrow was pressed */
             Movement = -5;
         break;
-        case 40:  /* Down arrow was pressed */
+        case 83:  /* Down arrow was pressed */
             Movement = 5;
         break;
-        case 37:  /* Left arrow was pressed */
+        case 65:  /* Left arrow was pressed */
             dMovement = -0.1;
             break;
-        case 39:  /* Right arrow was pressed */
+        case 68:  /* Right arrow was pressed */
             dMovement = 0.1;
             break;
-        case 32:
+        case 80:
             if( !spaceDown){
                 if(!mute){
                     pewSound.play();
@@ -577,23 +587,22 @@ function doKeyDown(evt){
             break;
 
     }
-    evt.preventDefault();
 }
 function doKeyUp(evt){
     switch (evt.keyCode) {
-        case 38:  /* Up arrow was pressed */
+        case 87:  /* Up arrow was pressed */
             Movement = 0;
             break;
-        case 40:  /* Down arrow was pressed */
+        case 83:  /* Down arrow was pressed */
             Movement = 0;
             break;
-        case 37:  /* Left arrow was pressed */
+        case 65:  /* Left arrow was pressed */
             dMovement = 0;
             break;
-        case 39:  /* Right arrow was pressed */
+        case 68:  /* Right arrow was pressed */
             dMovement = 0;
             break;
-        case 32:
+        case 80:
             spaceDown = false;
             break;
     }

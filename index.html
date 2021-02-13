@@ -21,6 +21,9 @@ body {
     <canvas id="canvas" height="600px" width="600px"></canvas>
     </br>
     <h4> Settings:</h4>
+    <label for="name">Username: </label>
+    <input type="text" id="name" name="name" placeholder="Username">
+    </br>
     Astroid rate (per 5 seconds): 
     <input id="slider1" type="range" min="1" max="50" step="1" value="9"/>
     <input type="text" id="text1" value="FILL" readonly /> per 5 seconds
@@ -30,12 +33,13 @@ body {
     <input type="text" id="text2" value="FILL" readonly /> seconds
     </br>
     Mute: <input type="checkbox" id="mute" name="mutebox" value="false">
+    </br>
 
     <h4> Directions:</h4>
     <p> Goal: </br> - shoot as many asteroids as you can in the given time (hint: smaller asteroids are 
     more points)</br></br> Start: </br> - use the mouse to click the start button </br></br> Movement: 
-    </br> - side arrow keys: rotates the quadcopter </br> - up/down arrow keys: moves the quadcopter 
-    forwards and backwards</br></br> Attack:</br> - space bar: shoots a bullet (one bullet per press) </p>
+    </br> - a/d keys: rotates the quadcopter </br> - w/s keys: moves the quadcopter 
+    forwards and backwards</br></br> Attack:</br> - p key: shoots a bullet (one bullet per press) </p>
     
 
     </span>
