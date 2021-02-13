@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="03-common.css" />
+</head>
+
+<style>
+span {
+    display:table;
+    margin:0 auto;
+    color: aliceblue;
+}
+body {
+    background: #222;
+}
+</style>
+
+<body>
+    <span>
+    <canvas id="canvas" height="600px" width="600px"></canvas>
+    </br>
+    
+    Astroid rate (per 5 seconds): 
+    <input id="slider1" type="range" min="1" max="50" step="1" value="9"/>
+    <input type="text" id="text1" value="FILL" readonly /> per 5 seconds
+    </br>
+    Time: 
+    <input id="slider2" type="range" min="5" max="60" step="1" value="30"/>
+    <input type="text" id="text2" value="FILL" readonly /> seconds
+    </br>
+    Mute: <input type="checkbox" id="mute" name="mutebox" value="false">
+
+    <h4> Directions:</h4>
+    <p> Goal: </br> - shoot as many asteroids as you can in the given time (hint: smaller asteroids are 
+    more points)</br></br> Start: </br> - use the mouse to click the start button </br></br> Movement: 
+    </br> - side arrow keys: rotates the quadcopter </br> - up/down arrow keys: moves the quadcopter 
+    forwards and backwards</br></br> Attack:</br> - space bar: shoots a bullet (one bullet per press) </p>
+    
+
+    </span>
+    
+    <script src="game.js" type="module" defer></script>
+</body>
+
+</html>
+
