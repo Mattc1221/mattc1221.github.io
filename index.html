@@ -1,51 +1,112 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="03-common.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom Style Sheets -->
+  <link rel='stylesheet' href='style.css' />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Nunito|Bebas Neue|Comfortaa">
+
+  <title>Home</title>
+
+
 </head>
 
-<style>
-span {
-    display:table;
-    margin:0 auto;
-    color: aliceblue;
-}
-body {
-    background: #222;
-}
-</style>
-
 <body>
-    <span>
-    <canvas id="canvas" height="600px" width="600px"></canvas>
-    </br>
-    <h4> Settings:</h4>
-    <label for="name">Username: </label>
-    <input type="text" id="name" name="name" placeholder="Username">
-    </br>
-    Astroid rate (per 5 seconds): 
-    <input id="slider1" type="range" min="1" max="50" step="1" value="9"/>
-    <input type="text" id="text1" value="FILL" readonly /> per 5 seconds
-    </br>
-    Time: 
-    <input id="slider2" type="range" min="5" max="60" step="1" value="30"/>
-    <input type="text" id="text2" value="FILL" readonly /> seconds
-    </br>
-    Mute: <input type="checkbox" id="mute" name="mutebox" value="false">
-    </br>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <h1 class="header">Projects</h1>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
 
-    <h4> Directions:</h4>
-    <p> Goal: </br> - shoot as many asteroids as you can in the given time (hint: smaller asteroids are 
-    more points)</br></br> Start: </br> - use the mouse to click the start button </br></br> Movement: 
-    </br> - a/d keys: rotates the quadcopter </br> - w/s keys: moves the quadcopter 
-    forwards and backwards</br></br> Attack:</br> - p key: shoots a bullet (one bullet per press) </p>
-    
 
-    </span>
-    
-    <script src="game.js" type="module" defer></script>
+  <!-- Graphics Projects -->
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <button class="btn project-button" type="button" data-toggle="collapse" data-target="#graphicsProjects"
+        aria-expanded="false">
+        Graphics Projects
+      </button>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="collapse" id="graphicsProjects">
+        <div class="row stretch">
+          <div class="card-deck justify-content-center ml-3">
+            <!-- Quad Copter Card -->
+            <div class="card mb-4">
+              <img class="card-img-top animated-gif" src="/gifs/quadcopter.gif"
+                alt="This is an animated gif image, but it does not move" />
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <h1 class="project-name project-bold">Quadcopter game</h1>
+                  </div>
+                  <div class="col-lg-5 text-right">
+                    <a class="text-right" href="/projects/quadcopter/quadcopter.html"><button class="view-button"
+                        type="button">View Project</button></a>
+                  </div>
+                </div>
+                <p><span class="project-bold"> Languages & Tools: </span> <span class="project-description">HTML,
+                    JavaScript, Canvas2d</span></p>
+                <p class="project-description">A Canvas2d game where you navigate a quadCopter to destroy as many
+                  asteroids as you can with the given time!</p>
+              </div>
+            </div>
+
+            <!-- Boids Copter Card -->
+            <div class="card mb-4">
+              <img class="card-img-top animated-gif" src="/gifs/boids.gif"
+                alt="This is an animated gif image, but it does not move" />
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h1 class="project-name project-bold">Boids</h1>
+                  </div>
+                  <div class="col-sm-6 text-right">
+                    <a class="text-right" href="/projects/boids/boids.html"><button class="view-button"
+                        type="button">View Project</button></a>
+                  </div>
+                </div>
+                <p><span class="project-bold"> Languages & Tools: </span> <span class="project-description">HTML,
+                    JavaScript, Canvas2d</span></p>
+                <p class="project-description">Leveraging the Canvas2d redering API, Boids is a simulation of Alignment,
+                  Separation and Cohesion Flocking algorithms. You can additionally change the flocking radius and speed
+                  of the simulation</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
 </body>
 
-</html>
 
+</html>

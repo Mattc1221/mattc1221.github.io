@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quadcopter</title>
+</head>
+
+<style>
+span {
+    display:table;
+    margin:0 auto;
+    color: aliceblue;
+}
+body {
+    background: #222;
+}
+</style>
+
+<body>
+    <span>
+    <canvas id="canvas" height="600px" width="600px"></canvas>
+    </br>
+    <h4> Settings:</h4>
+    <label for="name">Username: </label>
+    <input type="text" id="name" name="name" placeholder="Username">
+    </br>
+    Astroid rate (per 5 seconds): 
+    <input id="slider1" type="range" min="1" max="50" step="1" value="9"/>
+    <input type="text" id="text1" value="FILL" readonly /> per 5 seconds
+    </br>
+    Time: 
+    <input id="slider2" type="range" min="5" max="60" step="1" value="30"/>
+    <input type="text" id="text2" value="FILL" readonly /> seconds
+    </br>
+    Mute: <input type="checkbox" id="mute" name="mutebox" value="false">
+    </br>
+
+    <h4> Directions:</h4>
+    <p> Goal: </br> - shoot as many asteroids as you can in the given time (hint: smaller asteroids are 
+    more points)</br></br> Start: </br> - use the mouse to click the start button </br></br> Movement: 
+    </br> - a/d keys: rotates the quadcopter </br> - w/s keys: moves the quadcopter 
+    forwards and backwards</br></br> Attack:</br> - p key: shoots a bullet (one bullet per press) </p>
+    </span>
+    
+    <script src="/projects/quadcopter/game.js" type="module" defer></script>
+</body>
+
+</html>
+

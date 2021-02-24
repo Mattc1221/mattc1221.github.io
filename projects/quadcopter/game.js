@@ -1,22 +1,7 @@
-// empty shell for students to do their quadcopter
-// exercise
 
-// we do enable typescript type checking - see
-// https://graphics.cs.wisc.edu/Courses/559-sp2020/pages/typed-js/
-// and
-// https://github.com/Microsoft/TypeScript/wiki/Type-Checking-JavaScript-Files
-// @ts-check
-
-/* Set options for jshint (my preferred linter)
- * disable the warning about using bracket rather than dot
- * even though dot is better
- * https://stackoverflow.com/questions/13192466/how-to-suppress-variable-is-better-written-in-dot-notation
- */
 /* jshint -W069, -W141, esversion:6 */
 export {};
 
-// somewhere in your program you'll want a line
-// that looks like:
 const canvas = /** @type {HTMLCanvasElement} */ (document.getElementById("canvas"));
 const context = canvas.getContext("2d");
 const rateSlider = /** @type {HTMLInputElement} */ (document.getElementById("slider1"));
@@ -25,6 +10,7 @@ const timeSlider = /** @type {HTMLInputElement} */ (document.getElementById("sli
 const text2 = /** @type {HTMLInputElement} */ (document.getElementById("text2"));
 const muteBox = /** @type {HTMLInputElement} */ (document.getElementById("mute"));
 const nameBox = /** @type {HTMLInputElement} */ (document.getElementById("name"));
+
 
 /* Redraw list */
 let boxes = [];
@@ -75,10 +61,10 @@ let best = 0;
 let username = "Guest" + Math.floor(Math.random() * 100000).toString;
 
 /* Sounds -- found on https://freesound.org/people/InspectorJ/sounds/448226/ */
-let pewSound = new sound("music/pew.wav");
-let explodeSound = new sound("music/explode.wav");
-let music = new sound("music/8-bitSound.mp3");
-let titleMusic = new sound("music/titleMusic.mp3");
+let pewSound = new sound("/music/pew.wav");
+let explodeSound = new sound("/music/explode.wav");
+let music = new sound("/music/8-bitSound.mp3");
+let titleMusic = new sound("/music/titleMusic.mp3");
 let currentMusic = titleMusic;
 
 // Soure for this sound function found on: https://www.w3schools.com/graphics/tryit.asp?filename=trygame_sound
@@ -175,10 +161,6 @@ function restart(){
     start = false;
 }
 
-
-
-
-// and you will want to make an animation loop with something like:
 /**
  * the animation loop gets a timestamp from requestAnimationFrame
  * 
@@ -327,8 +309,6 @@ function addParticles(px, py, pcolor){
 
 function explode(){
     particles = particles.filter(
-        // this defines a function using "arrow notation"
-        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
         dot => ((dot.y>0)&&(dot.x>0)&&(dot.x<canvas.width)&&(dot.y<canvas.height)&&(dot.a > 0))
         );
 

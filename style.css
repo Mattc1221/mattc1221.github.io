@@ -1,0 +1,137 @@
+body {
+    background-color: #242424;
+    font-family: "Comfortaa", sans-serif;
+    color: #FFF;
+}
+
+.header1 {
+    font-size: 4em;
+}
+
+.project-button {
+    color:#FFF;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+}
+
+.project-button:hover {
+    outline: none;
+}
+
+.project-button:active {
+    outline: none;
+}
+
+.card {
+    background-color: #FCFCFC;
+    color: #000;
+    border-radius: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    min-width: 280;
+    max-width: 300px;
+    box-shadow: 0px 8px 4px #000;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.project-name {
+    font-size: 1.3em;
+}
+
+.project-description {
+    font-size: 0.7em;
+}
+
+.project-bold {
+    font-weight: bolder;
+    font-size: 0.7;
+}
+
+.view-button {
+    min-width: 120px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    background-color: transparent;
+    outline: none;
+    box-shadow: 0px 3px 4px #000;
+    border-color: #444;
+}
+
+.view-button:hover {
+    transition: 0.4s;
+    border-color: #FFF;
+    background-color: #242424;
+    color:#FFF;
+    box-shadow: 0px 0px 0px #000;
+}
+
+.secondary-button {
+    min-width: 120px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    color: #FFF;
+    background-color: transparent;
+    outline: none;
+    box-shadow: 0px 3px 4px #000;
+    border-color: #FFF;
+}
+
+.secondary-button:hover {
+    transition: 0.4s;
+    border-color: #242424;
+    background-color: #FFF;
+    color:#242424;
+    box-shadow: 0px 0px 0px #000;
+}
+
+.card-img-top {
+    border-radius: 25px 25px 0px 0px ;
+    margin-bottom: 10px;
+}
+
+img.animated-gif{
+    width: auto;
+    height: 300px;
+}
+
+.input_box {
+    background-color: #242424;
+    border: 3px solid #FCFCFC;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 8px 4px #000;
+}
+
+.page-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3em;
+}
+
+.primary-slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    width: 17px;
+    height: 25px;
+    background: #666666;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
