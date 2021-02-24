@@ -1,5 +1,5 @@
 body {
-    background-color: #242424;
+    background-color: #1a1a1a;
     font-family: "Comfortaa", sans-serif;
     color: #FFF;
 }
@@ -22,7 +22,7 @@ body {
 .project-button:hover {
     outline: none;
     transition: 0.4s;
-    color:#242424;
+    color:#1a1a1a;
     background-color: #FFF;
 
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .card {
-    background-color: #242424;
+    background-color: #1a1a1a;
     border: 3px solid #FCFCFC;
     box-shadow: 0px 8px 4px #000;
     border-radius: 25px;
@@ -72,7 +72,7 @@ body {
 .view-button:hover {
     transition: 0.4s;
     border-color: #FFF;
-    background-color: #242424;
+    background-color: #1a1a1a;
     color:#FFF;
     box-shadow: 0px 0px 0px #000;
 }
@@ -91,9 +91,9 @@ body {
 
 .secondary-button:hover {
     transition: 0.4s;
-    border-color: #242424;
+    border-color: #1a1a1a;
     background-color: #FFF;
-    color:#242424;
+    color:#1a1a1a;
     box-shadow: 0px 0px 0px #000;
 }
 
@@ -108,7 +108,7 @@ img.animated-gif{
 }
 
 .input_box {
-    background-color: #242424;
+    background-color: #1a1a1a;
     border: 3px solid #FCFCFC;
     border-radius: 20px;
     padding: 10px;
@@ -118,6 +118,12 @@ img.animated-gif{
 .page-title {
     font-family: "Bebas Neue", sans-serif;
     font-size: 3em;
+}
+
+.sub-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5em;
+    margin-left: 0.3em;
 }
 
 .primary-slider {
@@ -180,7 +186,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .home-box {
-    background-color: #242424;
+    background-color: #1a1a1a;
     border: 3px solid #FCFCFC;
     padding: 10px;
     border-radius: 10px;
