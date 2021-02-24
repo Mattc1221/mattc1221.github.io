@@ -10,13 +10,21 @@ body {
 
 .project-button {
     color:#FFF;
+    border: none;
+    border-radius: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    transition: 0.4s;
     background-color: transparent;
     outline: transparent;
-    border: none;
 }
 
 .project-button:hover {
     outline: none;
+    transition: 0.4s;
+    color:#242424;
+    background-color: #FFF;
+
 }
 
 .project-button:active {
@@ -31,9 +39,10 @@ body {
     padding-left: 0;
     padding-right: 0;
     min-width: 280;
-    max-width: 300px;
+    max-width: 340px;
     margin-right: 15px;
     margin-left: 15px;
+    width: 20em;
 }
 
 .project-name {
@@ -121,6 +130,35 @@ img.animated-gif{
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
+}
+
+.primary-text {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 2em; /* Full-width */
+    height: 25px; /* Specified height */
+    background: transparent; /* Grey background */
+    outline: transparent; /* Remove outline */
+    border: transparent;
+    font-family: "Comfortaa", sans-serif;
+    color: #FFF;
+}
+
+.username-input{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: transparent; /* Grey background */
+    border: 1px solid #FCFCFC;
+    font-family: "Comfortaa", sans-serif;
+    color: #FFF;
+}
+
+.checkbox{
+    height: 25px; 
+    width: 25px;
+    outline: none;
 }
 
 input[type=range]::-webkit-slider-thumb {
