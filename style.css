@@ -186,3 +186,12 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 10px;
     margin: 10px;
 }
+
+.home-nav {
+    color: #FFF;
+}
+
+.home-nav:hover {
+    color: #FFF;
+    text-decoration: none;
+}
