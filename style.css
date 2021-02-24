@@ -4,6 +4,13 @@ body {
     color: #FFF;
 }
 
+a {
+    color: #FFF;
+}
+a:hover {
+    color: #FFF;
+}
+
 .header1 {
     font-size: 4em;
 }
