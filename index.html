@@ -17,12 +17,58 @@
 </head>
 
 <body>
+  <div class="row mt-2">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-6">
+      <h1 class="page-title">Matthew k chiang</h1>
+    </div>
+    <div class="col align-self-center text-right">
+      <a href="https://github.com/Mattc1221">
+        <img src="/images/GitHub-Mark-Light-120px-plus.png" width="25px" height="25px"></a>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <!-- About me -->
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-      <h1 class="header">Projects</h1>
+      <button class="btn project-button" type="button" data-toggle="collapse" data-target="#aboutMe"
+        aria-expanded="true">
+        About Me
+      </button>
     </div>
     <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="collapse show" id="aboutMe">
+        <div class="row home-box">
+          <div class="col-sm-3 text-center">
+            <img class="home-pic mr-3" src="images/profile_pic.jpg">
+          </div>
+          <div class="col-sm-9">
+            <div class="home-box mb-3">
+              <p> Hello I am a Juniuo at the University of Wisconsin Madison pursuing a double major in Computer Science and Data Science with certificates in Mathematics and Mandarin Chinese.</p>
+              <p> Currently looking for a software engineering internship for Summer 2021 </p>
+            </div>
+            <div class="home-box">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>Email: mchiang7@wisc.edu</p>
+                </div>
+                <div class="col-sm-6">
+                  <p>github: github.com/Mattc1221</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
   </div>
 
 
@@ -31,7 +77,7 @@
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
       <button class="btn project-button" type="button" data-toggle="collapse" data-target="#graphicsProjects"
-        aria-expanded="false">
+        aria-expanded="true">
         Graphics Projects
       </button>
     </div>
@@ -40,7 +86,7 @@
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-      <div class="collapse" id="graphicsProjects">
+      <div class="collapse show" id="graphicsProjects">
         <div class="row stretch">
           <div class="card-deck justify-content-center ml-3">
             <!-- Quad Copter Card -->
@@ -53,7 +99,7 @@
                     <h1 class="project-name project-bold">Quadcopter game</h1>
                   </div>
                   <div class="col-lg-5 text-right">
-                    <a class="text-right" href="/projects/quadcopter/quadcopter.html"><button class="view-button"
+                    <a class="text-right" href="/projects/quadcopter/quadcopter.html"><button class="secondary-button"
                         type="button">View Project</button></a>
                   </div>
                 </div>
@@ -74,7 +120,7 @@
                     <h1 class="project-name project-bold">Boids</h1>
                   </div>
                   <div class="col-sm-6 text-right">
-                    <a class="text-right" href="/projects/boids/boids.html"><button class="view-button"
+                    <a class="text-right" href="/projects/boids/boids.html"><button class="secondary-button"
                         type="button">View Project</button></a>
                   </div>
                 </div>
