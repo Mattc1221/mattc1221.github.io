@@ -208,3 +208,8 @@ input[type=range]::-webkit-slider-thumb {
     color: #FFF;
     text-decoration: none;
 }
+
+iframe {
+    color: #eee;
+    border-radius: 25px;
+}
