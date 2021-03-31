@@ -185,7 +185,7 @@ function genRain(x, y, z) {
 
 function updateRain() {
     rain.filter((r) => r.y < -1).forEach(function (r) {
-        scene.remove(r.Mesh);
+        scene.remove(r.mesh);
     })
     rain = rain.filter((r) => r.y > -1);
     rain.forEach(function (r) {
