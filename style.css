@@ -213,3 +213,8 @@ iframe {
     color: #eee;
     border-radius: 25px;
 }
+
+.padding {
+    padding-left: 4;
+    padding-right: 4;
+}
